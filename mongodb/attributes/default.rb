@@ -90,12 +90,7 @@ else
 
 end
 
-default[:mongodb][:package_version] = nil
+default[:mongodb][:package_version] = "~> 1.12"
 default[:mongodb][:nojournal] = false
 default[:mongodb][:template_cookbook] = "mongodb"
 default[:mongodb][:oplog_size] = nil
-
-default['mongodb']['ruby_gems'] = {
-  :mongo => '~> 1.12',
-  :bson_ext => nil
-}
