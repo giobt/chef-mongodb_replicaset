@@ -90,7 +90,7 @@ else
 
 end
 
-default[:mongodb][:package_version] = "1.12.1"
+default[:mongodb][:package_version] = nil
 default[:mongodb][:nojournal] = false
 default[:mongodb][:template_cookbook] = "mongodb"
 default[:mongodb][:oplog_size] = nil
